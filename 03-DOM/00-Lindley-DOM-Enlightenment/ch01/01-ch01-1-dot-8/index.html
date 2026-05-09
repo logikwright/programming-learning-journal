@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One-Dot-Eight</title>
+</head>
+<body>
+    <div id="A"></div>
+    <span id="B"></span>
+    <div id="C"></div>
+    <div id="D"></div>
+    <div id="E"></div>
+    <div id="elm">how</div>
+
+    <script>
+        const aEl = document.getElementById('A');
+        const bEl = document.getElementById('B');
+        const cEl = document.getElementById('C');
+        const dEl = document.getElementById('D');
+        const eEl = document.getElementById('E');
+        const elmEl = document.getElementById('elm');
+
+        aEl.innerHTML= '<strong>I\'m here from JavaScript!</strong>'
+        bEl.outerHTML= '<div id="B" class="new">How Astounding!</div>';
+        cEl.textContent= 'I\'m the 3rd Candidate!';
+        dEl.innerText= 'This is Inner Text';
+        eEl.outerText= 'This is Outer Text';
+        elmEl.insertAdjacentHTML('beforebegin', '<span>Hey-</span>');
+        elmEl.insertAdjacentHTML('afterbegin', '<span>Dude-</span>');
+        elmEl.insertAdjacentHTML('beforeend', '<span>-are</span>');
+        elmEl.insertAdjacentHTML('afterend', '<span>-you?</span>');
+
+        console.log(document.body.innerHTML);
+    </script>
+</body>
+</html>
