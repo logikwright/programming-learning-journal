@@ -27,7 +27,7 @@ body > *{
 }
 
 header {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     display: flex;
     flex-direction: column-reverse;
     margin: 3ch 0;
@@ -36,7 +36,7 @@ header {
 header > * {margin: 0;}
 
 header h1 {
-    outline: 1px solid orange;
+    /* outline: 1px solid orange; */
     align-self: flex-start;
     opacity: 0.85;
     border-bottom: 1px solid;
@@ -69,7 +69,7 @@ header h2 {
 main {font-family: Georgia, serif}
 
 main h3 {
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
     display: inline-block;
     font-family: Open Sans, Helvetica, sans-serif;
     margin: 1ch 0 1.5ch;
@@ -78,12 +78,12 @@ main h3 {
 }
 
 main p {
-    outline: 1px solid pink;
+    /* outline: 1px solid pink; */
     font-size: 1.1em;
 }
 
 main p.note {
-    outline: 1px solid grey;
+    /* outline: 1px solid grey; */
     border: 2px solid hsl(0,70%,60%);
     background: hsl(0,10%,90%);
     mix-blend-mode: luminosity;
@@ -92,7 +92,7 @@ main p.note {
 }
 
 ol {
-    outline: 1px solid brown;
+    /* outline: 1px solid brown; */
     list-style: decimal;
     margin: 0;
     padding-left: 2.5ch;
@@ -130,8 +130,125 @@ li.xmp {
 
 ol li a[href]::after {color: black; font-style: italic;}
 ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
-ol li a[href$="doc"]::after, ol li a[href$="docx"]::after {content: " (MS Powerpoint document)";}
-ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
-ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
-ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
-ol li a[href$="ppt"]::after {content: " (MS Powerpoint document)";}
+ol li a[href$="doc"]::after, ol li a[href$="docx"]::after {content: " (MS Word document)";}
+ol li a[href$="png"]::after {content: " (PNG)";}
+ol li a[href$="jpg"]::after {content: " (JPG)";}
+ol li a[href$="gif"]::after {content: " (GIF)";}
+ol li a[href$="svg"]::after {content: " (SVG)";}
+
+nav {
+    /* outline: 1px solid coral; */
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    padding: 0;
+}
+
+nav > * {
+    border: 1px;
+    padding: 1ch 0;
+    opacity: 0.67;
+}
+
+nav > a:hover {opacity: 1;}
+
+nav > *:nth-child(1) {text-align: left; flex: 0 1 50%;}
+nav > *:nth-child(2) {text-align: center; flex: none; padding: 1ch 2ch; margin: 0 1ch;}
+nav > *:nth-child(3) {text-align: right; flex: 0 1 50%;}
+
+footer {
+    /* outline : 1px solid blueviolet; */
+    font-size: smaller;
+    font-style: italic;
+    border-top: 1px solid;
+    padding: 0.5ch 0 5ch;
+    grid-row: 5;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > * {opacity: 0.5;}
+footer > *:nth-child(2) {text-align: right;}
+
+@media (max-width: 60ch) {
+    nav > *:nth-child(2) {
+        border: 1px solid rgba(0,0,0,0.5);
+        border-width: 0 1px;
+    }
+
+    footer {
+        display: grid;
+    }
+
+    footer > *:nth-child(2) {
+        text-align: left;
+    }
+}
+
+@media (max-width: 90ch) {
+    nav, footer {grid-column: 1 / 3;}
+    nav > a[href] {
+        flex: 0 1 auto; 
+        padding: 1ch;
+    }
+
+    footer > * {padding: 0 1ch;}
+}
+
+@supports (writing-mode: sideways-lr) or (writing-mode: vertical-rl) {
+    @media (min-width: 60ch) {
+        nav {margin-bottom: 3em}
+
+        header {
+            /* outline: 1px solid yellowgreen; */
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            display: grid;
+            grid-template-columns : repeat(2, min-content);
+            justify-content: flex-end;
+            padding-top: 1.25rem;
+            margin-top: 0;
+        }
+
+        header > * {
+            /* outline: 1px solid peru; */
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            writing-mode: sideways-lr;
+            grid-row: 1;
+            align-self: flex-start;
+        }
+
+        header h1 {
+            grid-column: 2;
+            margin-right: 1.75rem;
+            max-height: 75vh;
+            text-align: right;
+            word-spacing: 0.13ch;
+            border-bottom: 0;
+        }
+
+        header h2 {
+            grid-column: 1;
+            margin: 0 -0.5ch 0 0;
+        }
+
+        @supports (writing-mode: sideways-lr) {
+            header > *{
+                writing-mode: sideways-lr;
+                transform: none;
+            }
+
+            main h3 {
+                margin-top: 0.75rem;
+            }
+        }
+    }
+}
+
+a[href="#"] {
+    background-color: #F005;
+    color: inherit;
+    text-decoration: none;
+}
