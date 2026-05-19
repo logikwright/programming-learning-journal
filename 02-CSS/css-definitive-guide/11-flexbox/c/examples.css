@@ -1,0 +1,10 @@
+@import url(../../styles/style-edit.css);
+
+style,
+body {
+    font-family: "unbuntu mono", Consolas, monospace;
+}
+
+div > div {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue";
+}
