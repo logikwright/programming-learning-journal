@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" class="code">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The two kinds of flex container</title>
+    <link rel="stylesheet" href="c/examples.css"/>
+    <style contenteditable>
+
+        article > div {
+            border: 1px dashed;
+            padding: 3px;
+            background-color: red;
+        }
+
+        div > div {
+            background: pink;
+            border: 1px solid;
+            margin: 10px;
+            padding: 20px 5px;
+            line-height: 30px;
+        }
+        
+        body {
+            font-size: 20px;
+            padding: 100px;
+        }
+        
+        body > * {
+            margin: 10px;
+        }
+
+        article > p {
+            outline: 1px solid green;
+            margin-top: 10px;
+        }
+
+        div#one {display: flex;}
+        div#two {display: inline-flex;}
+
+        div#one > *,
+        div#two > * {
+            background-color: palegreen;
+            border: 1px solid;
+            margin: 10px;
+            padding: 20px 5px;
+            line-height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <article>
+        <div style="display: flex;">
+            <div>
+                Here is some content.
+            </div>
+            <div>
+                More content than before, but no properties explicitly set.
+            </div>
+            <div>
+                Lots and lots of content. Even more content than to the left, but no properties explicitly set.
+            </div>
+        </div>
+        <p><code>display: flex; ⤴</code></p>
+    </article>
+
+    <article>
+        <div style="display: inline-flex;">
+            <div>
+                Here is some content.
+            </div>
+            <div>
+                More content than before, but no properties explicitly set.
+            </div>
+            <div>
+                Lots and lots of content. Even more content than to the left, but no properties explicitly set.
+            </div>
+        </div>
+        <p><code>display: inline-flex;</code>⤴</p>
+    </article>
+
+    <article>
+        <div id="one">
+            <p>flex item with<br/>two longer lines</p>
+            <span>flex item</span>
+            <p>flex item</p>
+        </div>
+
+        <p id="divOneParagraph"><code>display: flex;</code> ⤴</p>
+    </article>
+
+    <article>
+        <div id="two">
+            <p>flex item with<br/>two longer lines</p>
+            <span>flex item</span>
+            <p>Lots and lots of content. Even more content than to the left, but no properties explicitly set.</p>
+        </div>
+
+        <p><code>display: inline-flex;</code> ⤴</p>
+    </article>
+
+</body>
+</html>
