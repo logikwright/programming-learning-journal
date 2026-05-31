@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page layout using flex-direction: row and column</title>
+    <!-- <link rel="stylesheet" href="c/examples.css"/> -->
+    <style>
+        *{
+            outline: 1px #ccc dashed;
+            margin: 10px;
+            padding: 10px;
+        }
+        html {
+            outline: 5px solid orchid;
+            padding: 10px;
+        }
+
+        body {
+            outline: 1.5px dashed red;
+        }
+
+        header {
+            outline: 3px dashed orange;
+        }
+
+        h1 {
+            outline: 1.5px dashed teal;
+        }
+
+        nav {
+            outline: 3px dashed palevioletred;
+            justify-content: space-evenly;
+        }
+
+        a {
+            outline: 1.5px dashed rosybrown;
+        }
+
+        main {
+            outline: 3px dashed darkkhaki;
+        }
+        
+        article {
+            outline: 1.5px dashed tomato;
+        }
+
+        img {
+            outline: 1.5px dashed darkcyan;
+        }
+
+        p {
+            outline: 1.5px dashed cornflowerblue;
+        }
+
+        footer {
+            outline: 1.5px dashed darkorange;
+        }
+
+        body, nav, main, article {
+            display: flex;
+            font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue";
+        }
+
+        body, article {
+            flex-direction: column;
+            /* flex: 1 1 33%; */
+        }
+
+        img {
+            height: 100px;
+            background-color: #ccc;
+        }
+        
+    </style>
+</head>
+<body>
+    <header><h1>My Page's title!</h1></header>
+
+    <nav>
+        <a href="#1">Home</a>
+        <a href="#2">About</a>
+        <a href="#3">Blog</a>
+        <a href="#4">Careers</a>
+        <a href="#5">Contact Us</a>
+    </nav>
+
+    <main>
+        <article>
+            <img alt="" src="img1.jpg">
+            <p>This is some awesome content that is one the page.</p>
+            <button>Go Somewhere</button>
+        </article>
+        <article>
+            <img alt="" src="img2.jpg">
+            <p>This is more content than the previous box, but less than the next.</p>
+            <button>Click Me</button>
+        </article>
+        <article>
+            <img alt="" src="img3.jpg">
+            <p>We have lots of conent here to show that content can grow, and everything can be the same size if you use flexbox. Even if this has tons of text, it will line up with the other sections.</p>
+            <button>Do Something</button>
+        </article>
+    </main>
+    <footer>Copyright &copy; 2023</footer>
+</body>
+</html>
