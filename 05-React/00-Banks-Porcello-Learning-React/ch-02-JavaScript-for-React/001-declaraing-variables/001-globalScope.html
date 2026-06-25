@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scope</title>
+</head>
+<body>
+    <script>
+        var topic = "JavaScript";
+        if(topic) {
+            var topic = "React";
+            console.log("block", topic);
+        }
+
+        console.log("global", topic);
+    </script>
+</body>
+</html>
