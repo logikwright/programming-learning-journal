@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>default-parameters-object</title>
+</head>
+<body>
+    <script>
+        const defaultPerson = {
+            name: {
+                firstName : "Niraj",
+                lastName : "Bajaj"
+            },
+            favActivity: "skiing"
+        }
+
+        function logActivity(person = defaultPerson) {
+            console.log(`${person.name.firstName} ${person.name.lastName} loves ${person.favActivity}`);
+        }
+
+        logActivity();
+    </script> 
+</body>
+</html>
