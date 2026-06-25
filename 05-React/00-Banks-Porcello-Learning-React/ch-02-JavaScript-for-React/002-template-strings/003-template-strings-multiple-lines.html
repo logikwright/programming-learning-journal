@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple-Lines</title>
+</head>
+<body>
+    <script>
+        var firstName = "Niraj";
+        var middleName = "Satish";
+        var lastName = "Bajaj";
+        
+        var ticketAgent = "The io Theater";
+        var event = "India's Got Latent";
+        var qty = 2;
+        var price = 10;
+
+        const mail = `
+            \nHello ${firstName},
+            
+            \nThanks for ordering ${qty} tickets to ${event}.
+
+            \nOrder Details
+
+            \n${firstName} ${middleName} ${lastName}
+                \n${qty} x $${price} = $${qty * price} to ${event}
+
+            \nYou can pick your tickets up 30 minutes before the show.
+
+            \nThanks,
+
+            \n${ticketAgent}
+        `;
+
+        console.log(mail);
+    </script>
+</body>
+</html>
