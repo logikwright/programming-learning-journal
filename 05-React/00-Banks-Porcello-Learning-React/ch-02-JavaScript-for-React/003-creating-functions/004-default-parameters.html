@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>default-parameters</title>
+</head>
+<body>
+    <script>
+        function logActivity(name = "Shane McConkey", activity = "skiing"){
+            console.log(`${name} loves ${activity}`);
+        }
+
+        logActivity();
+        logActivity("Niraj","football");
+        logActivity(undefined,"football");
+        logActivity(null,"football");
+        logActivity("", "eating");
+    </script>
+</body>
+</html>
