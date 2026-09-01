@@ -1,0 +1,15 @@
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/bin/Debug/net10.0/BasicDataTypes
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/bin/Debug/net10.0/BasicDataTypes.deps.json
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/bin/Debug/net10.0/BasicDataTypes.runtimeconfig.json
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/bin/Debug/net10.0/BasicDataTypes.dll
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/bin/Debug/net10.0/BasicDataTypes.pdb
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.GeneratedMSBuildEditorConfig.editorconfig
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.AssemblyInfoInputs.cache
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.AssemblyInfo.cs
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.csproj.CoreCompileInputs.cache
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.sourcelink.json
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.dll
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/refint/BasicDataTypes.dll
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.pdb
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/BasicDataTypes.genruntimeconfig.cache
+/home/logikwright/01-language-practice/programming-learning-journal/06-CSharp/01-Troelsen-Japikse-CSharp-10-Net-6/Chapter3/BasicDataTypes/obj/Debug/net10.0/ref/BasicDataTypes.dll
