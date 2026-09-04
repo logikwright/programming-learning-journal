@@ -1,0 +1,72 @@
+# =======================
+# Node.js / TypeScript
+# =======================
+node_modules/
+dist/
+coverage/
+
+# npm / pnpm / yarn logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =======================
+# .NET
+# =======================
+bin/
+obj/
+
+# User-specific Visual Studio files
+*.user
+*.suo
+
+# =======================
+# Go
+# =======================
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary
+*.test
+
+# Go coverage
+*.out
+coverage.out
+
+# =======================
+# PostgreSQL data directory
+# =======================
+pgdata/
+postgres-data/
+
+# =======================
+# IntelliJ IDEA
+# =======================
+.idea/
+*.iml
+
+# =======================
+# Environment variables
+# =======================
+.env
+.env.*
+
+# =======================
+# Logs
+# =======================
+*.log
+
+# =======================
+# Visual Studio Code
+# =======================
+.vscode/
+
+# =======================
+# Operating System
+# =======================
+.DS_Store
+Thumbs.db
