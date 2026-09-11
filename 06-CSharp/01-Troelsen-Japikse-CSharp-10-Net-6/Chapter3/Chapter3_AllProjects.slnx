@@ -1,5 +1,15 @@
 <Solution>
   <Project Path="BasicConsoleIO/BasicConsoleIO.csproj" />
   <Project Path="BasicDataTypes/BasicDataTypes.csproj" />
+  <Project Path="BasicStringFunctionality/BasicStringFunctionality.csproj" />
+  <Project Path="CharFunctionality/CharFunctionality.csproj" />
+  <Project Path="DataTypeFunctionality/DataTypeFunctionality.csproj" />
+  <Project Path="EscapeChars/EscapeChars.csproj" />
+  <Project Path="FormatNumericalData/FormatNumericalData.csproj" />
+  <Project Path="NewingDataTypes/NewingDataTypes.csproj" />
+  <Project Path="ObjectFunctionality/ObjectFunctionality.csproj" />
+  <Project Path="ParseFromStrings/ParseFromStrings.csproj" />
   <Project Path="SimpleCSharpApp/SimpleCSharpApp.csproj" />
+  <Project Path="StringConcatenation/StringConcatenation.csproj" />
+  <Project Path="UseDatesAndTimes/UseDatesAndTimes.csproj" />
 </Solution>

@@ -8,7 +8,7 @@ namespace BasicDataType
 {
     class BasicDataType
     {
-        static void LocalVarDeclarations()
+        public static void LocalVarDeclarations()
         {
             Console.WriteLine("=> Data Declarations:");
 
