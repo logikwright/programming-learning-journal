@@ -4,6 +4,7 @@
   <Project Path="BasicStringFunctionality/BasicStringFunctionality.csproj" />
   <Project Path="CharFunctionality/CharFunctionality.csproj" />
   <Project Path="DataTypeFunctionality/DataTypeFunctionality.csproj" />
+  <Project Path="DefaultDeclarations/DefaultDeclarations.csproj" />
   <Project Path="EscapeChars/EscapeChars.csproj" />
   <Project Path="FormatNumericalData/FormatNumericalData.csproj" />
   <Project Path="NewingDataTypes/NewingDataTypes.csproj" />
@@ -11,5 +12,8 @@
   <Project Path="ParseFromStrings/ParseFromStrings.csproj" />
   <Project Path="SimpleCSharpApp/SimpleCSharpApp.csproj" />
   <Project Path="StringConcatenation/StringConcatenation.csproj" />
+  <Project Path="StringEquality/StringEquality.csproj" />
+  <Project Path="StringInterpolation/StringInterpolation.csproj" />
+  <Project Path="StringsAreImmutable/StringsAreImmutable.csproj" />
   <Project Path="UseDatesAndTimes/UseDatesAndTimes.csproj" />
 </Solution>
